@@ -1,4 +1,4 @@
-# Proyecto Laravel de Tareas (Nombre del Proyecto)
+# Proyecto Laravel de Tareas Prueba api
 
 Este es un proyecto Laravel simple que gestiona una lista de tareas a través de una API REST. Permite crear, leer, actualizar y eliminar tareas.
 
