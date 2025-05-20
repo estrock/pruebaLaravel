@@ -18,8 +18,8 @@ Sigue estos pasos para poner en marcha el proyecto en tu entorno local:
 
 1.  **Clonar el repositorio:**
     ```bash
-    git clone https://URL_DE_TU_REPOSITORIO.git
-    cd nombre-del-directorio-del-proyecto
+    git clone (https://github.com/estrock/pruebaLaravel.git)
+    cd pruebaLaravel
     ```
 
 2.  **Instalar dependencias de PHP:**
@@ -38,16 +38,14 @@ Sigue estos pasos para poner en marcha el proyecto en tu entorno local:
     ```
 
 4.  **Configurar la base de datos en `.env`:**
-    Abre el archivo `.env` y configura las variables de conexión a tu base de datos:
-    ```env
-    DB_CONNECTION=mysql
-    DB_HOST=127.0.0.1
-    DB_PORT=3306
-    DB_DATABASE=nombre_de_tu_base_de_datos
-    DB_USERNAME=tu_usuario_de_bd
-    DB_PASSWORD=tu_contraseña_de_bd
-    ```
-    **Importante:** Asegúrate de que la base de datos (`nombre_de_tu_base_de_datos`) exista en tu servidor de base de datos. Si no existe, créala.
+    El archivo de .env ya se encuentra denntro del repositorio, se debe asegurar correr la version de la bd con los siguientes parametros:
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laravel
+DB_USERNAME=root
+DB_PASSWORD=
+    **Importante:** Asegúrate de que la base de datos (`laravel`) exista en tu servidor de base de datos. Si no existe, créala.
 
 5.  **Ejecutar las migraciones:**
     Esto creará las tablas necesarias en tu base de datos.
@@ -59,12 +57,6 @@ Sigue estos pasos para poner en marcha el proyecto en tu entorno local:
     php artisan db:seed
     ```
 
-6.  **(Opcional) Instalar dependencias de Node.js y compilar assets:**
-    Si tu proyecto tiene assets frontend gestionados con Vite o Mix:
-    ```bash
-    npm install
-    npm run dev # o npm run build para producción
-    ```
 
 ## Iniciar el Servidor de Desarrollo
 
